@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RConsoles – Power Beyond Gaming</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #050505;
+        color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 18px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+
+    nav h1 {
+        font-size: 32px;
+        color: #00d0ff;
+        letter-spacing: 3px;
+        margin: 0;
+        text-shadow: 0 0 12px #00d0ff;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 25px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #00d0ff;
+    }
+
+    /* HERO */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px 50px 80px;
+        height: 100vh;
+        background: linear-gradient(135deg, #00111e, #000);
+    }
+
+    .hero-text {
+        width: 50%;
+    }
+
+    .hero-text h2 {
+        font-size: 60px;
+        margin: 0;
+        line-height: 1.1;
+        font-weight: 800;
+    }
+
+    .hero-text p {
+        margin: 20px 0 40px;
+        font-size: 20px;
+        color: #c7e9ff;
+    }
+
+    .btn {
+        padding: 15px 38px;
+        border-radius: 40px;
+        font-size: 18px;
+        background: #00d0ff;
+        border: none;
+        color: #00111e;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 15px #00d0ff;
+    }
+
+    .hero-img {
+        width: 45%;
+        animation: float 3s infinite ease-in-out;
+        filter: drop-shadow(0 0 25px #00d0ff);
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-12px); }
+        100% { transform: translateY(0); }
+    }
+
+    /* FEATURED SECTION */
+    .section {
+        padding: 80px 50px;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        text-shadow: 0 0 10px #00d0ff;
+    }
+
+    .section p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        color: #c7e9ff;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 310px;
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 0 20px #00d0ff;
+        border: 1px solid #00d0ff;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .card h3 {
+        margin: 12px 0 8px;
+        font-size: 22px;
+    }
+
+    .card span {
+        color: #00d0ff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        padding: 30px;
+        background: #000;
+        color: #b3d9ff;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>RConsoles</h1>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#consoles">Consoles</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h2>UNLEASH<br>PURE GAMING POWER</h2>
+        <p>The next generation of consoles is here.  
+           Faster. Cooler. Sharper.  
+           RConsoles — Beyond Imagination.</p>
+
+        <a href="#consoles" class="btn">Explore Consoles</a>
+    </div>
+
+    <img class="hero-img" 
+         src="https://images.unsplash.com/photo-1606813907291-5247fce4a315" 
+         alt="Gaming Console">
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" id="consoles">
+    <h2>Featured Consoles</h2>
+    <p>Select your weapon. Dominate the game.</p>
+
+    <div class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606813907291-5247fce4a315" alt="Console">
+            <h3>RConsole X</h3>
+            <span>₹49,999</span>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621259182978-fbf97bbf6f53" alt="Controller">
+            <h3>RConsole Pro Controller</h3>
+            <span>₹6,999</span>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9f5" alt="Console">
+            <h3>RConsole Ultra</h3>
+            <span>₹59,999</span>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621259182978-fbf97bbf6f53" alt="VR">
+            <h3>R-VR Headset 2.0</h3>
+            <span>₹29,999</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 RConsoles. All Rights Reserved.
+</footer>
+
+</body>
+</html>
