@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment - RConsoles</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #000, #2b002b);
+      color: white;
+    }
+    .container {
+      width: 90%;
+      max-width: 500px;
+      margin: auto;
+      margin-top: 40px;
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(255, 0, 80, 0.5);
+    }
+    h1 {
+      text-align: center;
+      text-shadow: 0 0 15px #ff008c;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: none;
+    }
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background: #ff0077;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #e6006b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Payment</h1>
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name" />
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email" />
+
+    <label>Address</label>
+    <input type="text" placeholder="Enter your address" />
+
+    <label>Payment Method</label>
+    <select>
+      <option>UPI</option>
+      <option>Credit Card</option>
+      <option>Debit Card</option>
+      <option>Net Banking</option>
+      <option>Cash on Delivery</option>
+    </select>
+
+    <button class="btn" onclick="window.location.href='thankyou.html'">Make Payment</button>
+  </div>
+</body>
+</html>
